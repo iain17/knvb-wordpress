@@ -4,7 +4,7 @@
 //
 // Component: Ranking
 // Sub-component:
-// Purpose: Show the current rank of a team.
+// Purpose: Show the schedule of the club.
 //
 // Initial author: Iain Munro
 // Started: 1 july 2016
@@ -15,13 +15,15 @@ function knvb_club_schedule($parameters) {
     $tpl = new Tpl;
     $club = getClub();
     $schedules = array();
+
     foreach($club->getTeams() as $team){
         $schedules[] = $team->getSchedule($parameters['weeknummer']);
     }
+
+    die('test');
     $tpl->assign('schedules', $schedules);
     return $tpl->draw('schedule/club_schedule', true);
 }
-//[knvb-club-schedule weeknummer="C"]
-add_shortcode("knvb-club-schedule", "knvb_club_schedule");
+plugin_register_short_code('club-schedule', 'Show the schedule of the club.', knvb_club_schedule, array('weeknummer' => "C"));
 
 ?>

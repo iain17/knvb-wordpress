@@ -23,14 +23,13 @@ function knvb_api_options() {
     if($club) {
         $teams = $club->getTeams();
     }
-
+    $codes = plugin_get_registered_short_codes();
     include('content.php');
 }
 
-function knvb_api_register_settings() { // whitelist options
+function knvb_api_register_settings() {
     register_setting('knvb-api-settings-group', 'knvb_api_key');
     register_setting('knvb-api-settings-group', 'knvb_api_pathname');
-    register_setting('knvb-api-settings-group', 'knvb_api_clubname');
 }
 
 if(is_admin()) {

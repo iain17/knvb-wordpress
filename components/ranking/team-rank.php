@@ -4,7 +4,7 @@
 //
 // Component: Ranking
 // Sub-component:
-// Purpose: Show the current rank of a team.
+// Purpose: Show the current rank of a team etc.
 //
 // Initial author: Iain Munro
 // Started: 1 july 2016
@@ -14,14 +14,13 @@ use Rain\Tpl;
 function knvb_ranking($parameters) {
     $tpl = new Tpl;
     $club = getClub();
-    $team = $club->getTeam($parameters['id']);
+    $team = $club->getTeam($parameters['team-id']);
     $ranks = $team->getRanking();
     $tpl->assign('showlogo', $parameters['showlogo']);
     $tpl->assign('club', $club);
     $tpl->assign('ranks', $ranks);
-    return $tpl->draw('ranking/template', $return_string = true);
+    return $tpl->draw('ranking/team-rank', true);
 }
-//[knvb-ranking id="162813" showLogo="yes"]
-add_shortcode("knvb-ranking", "knvb_ranking");
+plugin_register_short_code('team-rank', 'Show the current rank of a team.', knvb_ranking, array('team-id' => 162813, 'showlogo' => 'yes'));
 
 ?>

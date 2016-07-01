@@ -20,12 +20,6 @@
                 </td>
             </tr>
 
-<!--            <tr valign="top">-->
-<!--                <th scope="row">Clubnaam (volgens KNVB-site)</th>-->
-<!--                <td>-->
-<!--                    <input type="text" name="knvb_api_clubname" value="--><?php //echo esc_attr(get_option('knvb_api_clubname')); ?><!--" />-->
-<!--                </td>-->
-<!--            </tr>-->
         </table>
 
         <?php submit_button(); ?>
@@ -35,12 +29,22 @@
         <table style="width:100%">
             <tr>
                 <td>Team</td>
-                <td>Stand van een team</td>
+                <?php foreach($codes as $code): ?>
+                    <td><?php echo $code['description']; ?></td>
+                <?php endforeach; ?>
             </tr>
             <?php foreach($teams as $team): ?>
                 <tr>
                     <td><?php echo $team->getName(); ?></td>
-                    <td>[knvb-ranking id="<?php echo $team->teamid ?>" showLogo="yes"]</td>
+                    <?php foreach($codes as $name => $code): ?>
+                        <td>
+                            [knvb name="<?php echo $name ?>"
+                            <?php foreach($code['parameters'] as $key => $defaultValue): ?>
+                                <?php echo $key; ?>="<?php echo $key == 'team-id' ? $team->teamid : $defaultValue; ?>"
+                            <?php endforeach; ?>
+                            ]
+                        </td>
+                    <?php endforeach; ?>
                 </tr>
             <?php endforeach; ?>
         </table>

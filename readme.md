@@ -1,11 +1,44 @@
 # KNVB Wordpress plugin
 A Wordpress that shows the status off a Dutch football club using the official KNVB api.
 
-## Logo's
-When you want to show the logo's of the teams, just add a extra attribute to the wordpress knvb shortcodes like so:
+## Ranking
+Show the current rank of a team.
 ```
-[knvb-ranking id="162813" showLogo="yes"]
+[knvb name="team-rank" team-id="162813" showlogo="yes" ]
 ```
+
+## Schedule
+Show the schedule of the club.
+#Deze week
+```
+[knvb name="club-schedule" weeknummer="C" ]
+```
+
+#Vorige week
+```
+[knvb name="club-schedule" weeknummer="P" ]
+```
+
+#Volgende week
+```
+[knvb name="club-schedule" weeknummer="N" ]
+```
+
+#Specifieke week
+```
+[knvb name="club-schedule" weeknummer="42" ]
+```
+
+#Alle wedstrijden
+```
+[knvb name="club-schedule" weeknummer="A" ]
+```
+
+<!--#Alle wedstrijden, thuis- en uitwedstrijden gesplitst-->
+<!--```-->
+<!--[knvb name="club-schedule" weeknummer="A" thuis="yes" ]-->
+<!--```-->
+
 
 ## Customisation
 The plugin makes use of [raintpl](https://github.com/feulf/raintpl/) templates making it relatively easy to change to templates to your liking.

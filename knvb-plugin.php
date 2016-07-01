@@ -36,27 +36,16 @@ Tpl::configure(array(
     "cache_dir"     => RL."cache/"
 ));
 
-## Require all needed files ##
-$directories = array('helpers');
+//Helpers
+include_once(RL . 'helpers/debug.php');
 
-foreach ($directories as $dir) {
-    if ($handle = opendir(RL . $dir)) {
-        while (false !== ($entry = readdir($handle))) {
-            if ($entry != "." && $entry != "..") {
-                $ext = pathinfo($entry, PATHINFO_EXTENSION);
+//Plugin
+include_once(RL . 'components/short-codes/main.php');
+include_once(RL . 'components/wp-admin/main.php');
 
-                if($ext == 'php') {
-                    //echo RL . $dir . DS . $entry.'<br>';
-                    require_once(RL . $dir . DS . $entry);
-                }
-            }
-        }
+//Shortcodes
+include_once(RL . 'components/ranking/team-rank.php');
+include_once(RL . 'components/schedule/club_schedule.php');
 
-        closedir($handle);
-    }
-}
 
-//Include the plugins features:
-include_once(RL.'components/wp-admin/main.php');
-include_once(RL.'components/ranking/main.php');
 ?>
