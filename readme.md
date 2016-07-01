@@ -9,36 +9,31 @@ Show the current rank of a team.
 
 ## Schedule
 Show the schedule of the club.
-#Deze week
+
+###This week
 ```
 [knvb name="club-schedule" weeknummer="C" ]
 ```
 
-#Vorige week
+###Previous week
 ```
 [knvb name="club-schedule" weeknummer="P" ]
 ```
 
-#Volgende week
+###Next week
 ```
 [knvb name="club-schedule" weeknummer="N" ]
 ```
 
-#Specifieke week
+###Specific week
 ```
 [knvb name="club-schedule" weeknummer="42" ]
 ```
 
-#Alle wedstrijden
+###All weeks
 ```
 [knvb name="club-schedule" weeknummer="A" ]
 ```
-
-<!--#Alle wedstrijden, thuis- en uitwedstrijden gesplitst-->
-<!--```-->
-<!--[knvb name="club-schedule" weeknummer="A" thuis="yes" ]-->
-<!--```-->
-
 
 ## Customisation
 The plugin makes use of [raintpl](https://github.com/feulf/raintpl/) templates making it relatively easy to change to templates to your liking.
