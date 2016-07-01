@@ -1,5 +1,5 @@
 # KNVB Wordpress plugin
-A description.
+A Wordpress that shows the status off a Dutch football club using the official KNVB api.
 
 ## Logo's
 When you want to show the logo's of the teams, just add a extra attribute to the wordpress knvb shortcodes like so:

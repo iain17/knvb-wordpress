@@ -1,5 +1,5 @@
 <div class="wrap">
-    <h2>KNVB</h2>
+    <h1>KNVB</h1>
 
     <form method="post" action="options.php">
         <?php settings_fields('knvb-api-settings-group'); ?>
@@ -7,7 +7,7 @@
 
         <table class="form-table">
             <tr valign="top">
-                <th scope="row">API sleutel</th>
+                <th scope="row">API key</th>
                 <td>
                     <input type="text" name="knvb_api_key" value="<?php echo esc_attr(get_option('knvb_api_key')); ?>" />
                 </td>
@@ -20,16 +20,28 @@
                 </td>
             </tr>
 
-            <tr valign="top">
-                <th scope="row">Clubnaam (volgens KNVB-site)</th>
-                <td>
-                    <input type="text" name="knvb_api_clubname" value="<?php echo esc_attr(get_option('knvb_api_clubname')); ?>" />
-                </td>
-            </tr>
+<!--            <tr valign="top">-->
+<!--                <th scope="row">Clubnaam (volgens KNVB-site)</th>-->
+<!--                <td>-->
+<!--                    <input type="text" name="knvb_api_clubname" value="--><?php //echo esc_attr(get_option('knvb_api_clubname')); ?><!--" />-->
+<!--                </td>-->
+<!--            </tr>-->
         </table>
 
         <?php submit_button(); ?>
     </form>
 
-    <h2>Short codes</h2>
+    <h1>Short codes</h1>
+        <table style="width:100%">
+            <tr>
+                <td>Team</td>
+                <td>Stand van een team</td>
+            </tr>
+            <?php foreach($teams as $team): ?>
+                <tr>
+                    <td><?php echo $team->getName(); ?></td>
+                    <td>[knvb-ranking id="<?php echo $team->teamid ?>" showLogo="yes"]</td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
 </div>

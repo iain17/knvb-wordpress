@@ -1,5 +1,14 @@
 <?php
-//Admin panel. For setting up the api key and such.
+// ==========================================================
+// KNVB project
+//
+// Component: wp-admin
+// Sub-component:
+// Purpose: Admin panel. For setting up the api key and such.
+//
+// Initial author: Iain Munro
+// Started: 1 july 2016
+// ==========================================================
 function knvb_api_menu() {
     add_options_page('KNVB',
         'KNVB',
@@ -9,6 +18,12 @@ function knvb_api_menu() {
 }
 
 function knvb_api_options() {
+    $club = getClub();
+    $teams = array();
+    if($club) {
+        $teams = $club->getTeams();
+    }
+
     include('content.php');
 }
 

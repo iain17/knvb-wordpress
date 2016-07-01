@@ -21,6 +21,7 @@ function knvb_ranking($parameters) {
     $tpl->assign('ranks', $ranks);
     return $tpl->draw('ranking/template', $return_string = true);
 }
+//[knvb-ranking id="162813" showLogo="yes"]
 add_shortcode("knvb-ranking", "knvb_ranking");
 
 ?>

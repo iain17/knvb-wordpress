@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: KNVB Wordprss plugin
+ * Plugin Name: KNVB Wordpress plugin
  * Plugin URI: http://www.iMunro.nl
  * Description: A Wordpress plugin for https://github.com/fruitcake/php-knvb-dataservice-api
  * Version: 1.00
@@ -9,7 +9,6 @@
  * */
 
 require_once  'vendor/autoload.php';
-
 use KNVB\Dataservice\Api;
 use Rain\Tpl;
 
@@ -20,9 +19,13 @@ define('RL', dirname(__FILE__) . DS);
 $club = null;
 function getClub() {
     global $club;
-    if($club == null) {
-        $api = new Api(get_option('knvb_api_pathname'), get_option('knvb_api_key'));
-        $club = $api->getClub();
+    try {
+        if ($club == null) {
+            $api = new Api(get_option('knvb_api_pathname'), get_option('knvb_api_key'));
+            $club = $api->getClub();
+        }
+    }catch(Exception $e) {
+        echo $e->getMessage(), "\n";
     }
     return $club;
 }
