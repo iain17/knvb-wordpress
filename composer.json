@@ -1,0 +1,13 @@
+{
+  "repositories": [
+    //Contains a few fixes to the api wrapper while I worked on it.
+    {
+      "url": "https://github.com/iain17/php-knvb-dataservice-api",
+      "type": "git"
+    }
+  ],
+  "require": {
+    "fruitcakestudio/knvb-dataservice-api": "^0.2.1",
+    "rain/raintpl": "^3.1"
+  }
+}
