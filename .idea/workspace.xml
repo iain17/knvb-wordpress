@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7edc495-fc7d-45da-8c4a-b546c91210e7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knvb-plugin.php" afterPath="$PROJECT_DIR$/knvb-plugin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/wp-admin/short-codes.php" afterPath="$PROJECT_DIR$/components/wp-admin/short-codes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/ranking/team_rank.html" afterPath="$PROJECT_DIR$/components/ranking/team_rank.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/knvb.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/wp-admin/content.php" afterPath="$PROJECT_DIR$/components/wp-admin/content.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="knvb.iws" />
@@ -33,8 +33,26 @@
       <file leaf-file-name="content.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/wp-admin/content.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-32.416668" vertical-offset="122" max-vertical-offset="1035">
-              <caret line="60" column="213" selection-start-line="60" selection-start-column="213" selection-end-line="60" selection-end-column="213" />
+            <state vertical-scroll-proportion="-30.541666" vertical-offset="557" max-vertical-offset="1455">
+              <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#table#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+            <state />
+          </provider>
+          <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.11972634" vertical-offset="0" max-vertical-offset="877">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -53,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="short-codes.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="short-codes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/wp-admin/short-codes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8640997" vertical-offset="122" max-vertical-offset="1050">
+            <state vertical-scroll-proportion="-31.791666" vertical-offset="122" max-vertical-offset="1050">
               <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
               <folding />
             </state>
@@ -94,7 +112,6 @@
         <option value="$PROJECT_DIR$/components/wp-admin/main.php" />
         <option value="$PROJECT_DIR$/components/short-codes/main.php" />
         <option value="$PROJECT_DIR$/components/ranking/main.php" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/vendor/fruitcakestudio/knvb-dataservice-api/src/Api.php" />
         <option value="$PROJECT_DIR$/vendor/fruitcakestudio/knvb-dataservice-api/src/HttpClient/HttpClient.php" />
         <option value="$PROJECT_DIR$/vendor/fruitcakestudio/knvb-dataservice-api/src/Team.php" />
@@ -110,7 +127,6 @@
         <option value="$PROJECT_DIR$/vendor/fruitcakestudio/knvb-dataservice-api/src/Exception/InvalidResponseException.php" />
         <option value="$PROJECT_DIR$/vendor/fruitcakestudio/knvb-dataservice-api/src/Exception/MissingAttributeException.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/components/wp-admin/content.php" />
         <option value="$PROJECT_DIR$/components/results/club_result_extended.html" />
         <option value="$PROJECT_DIR$/components/ranking/team_rank.php" />
         <option value="$PROJECT_DIR$/components/schedule/club_schedule.php" />
@@ -118,6 +134,8 @@
         <option value="$PROJECT_DIR$/components/ranking/team_rank.html" />
         <option value="$PROJECT_DIR$/knvb-plugin.php" />
         <option value="$PROJECT_DIR$/components/wp-admin/short-codes.php" />
+        <option value="$PROJECT_DIR$/components/wp-admin/content.php" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -269,6 +287,7 @@
       <recent name="$PROJECT_DIR$/components/club-schedule" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/components/wp-admin" />
       <recent name="$PROJECT_DIR$/components/ranking" />
       <recent name="$PROJECT_DIR$/compontents/wp-admin" />
@@ -361,7 +380,13 @@
       <option name="project" value="LOCAL" />
       <updated>1467547096651</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Cache variable added.">
+      <created>1467547538283</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1467547538283</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -414,7 +439,8 @@
     <MESSAGE value="club schedule fixed. Seemed that the knvb api only fucks up at the end of the season? Anyways from dev purposes a static week number like 14 is fine." />
     <MESSAGE value="club result fixed." />
     <MESSAGE value="implemented cache." />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented cache." />
+    <MESSAGE value="Cache variable added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cache variable added." />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$/../../..</wordpressPath>
@@ -509,20 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34201586" vertical-offset="3508" max-vertical-offset="5220">
           <caret line="254" column="26" selection-start-line="254" selection-start-column="26" selection-end-line="254" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5986317" vertical-offset="0" max-vertical-offset="877">
-          <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -636,14 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/wp-admin/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-32.416668" vertical-offset="122" max-vertical-offset="1035">
-          <caret line="60" column="213" selection-start-line="60" selection-start-column="213" selection-end-line="60" selection-end-column="213" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/ranking/team_rank.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39071348" vertical-offset="0" max-vertical-offset="883">
@@ -673,8 +677,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/wp-admin/short-codes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8640997" vertical-offset="122" max-vertical-offset="1050">
+        <state vertical-scroll-proportion="-31.791666" vertical-offset="122" max-vertical-offset="1050">
           <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/wp-admin/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-30.541666" vertical-offset="557" max-vertical-offset="1455">
+          <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#table#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11972634" vertical-offset="0" max-vertical-offset="877">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding />
         </state>
       </provider>

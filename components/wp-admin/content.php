@@ -61,4 +61,32 @@
         <pre>[knvb name="<?php echo $name ?>" <?php foreach($code['parameters'] as $key => $defaultValue): ?><?php echo $key; ?>="<?php echo $key == 'team-id' ? $team->teamid : $defaultValue; ?>" <?php endforeach;?>]</pre>
     <?php } ?>
 
+    <h1>Week numbers</h1>
+    <table style="width:100%">
+        <tr>
+            <td>Week number</td>
+            <td>Description</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>This week</td>
+        </tr>
+        <tr>
+            <td>P</td>
+            <td>Previous week</td>
+        </tr>
+        <tr>
+            <td>N</td>
+            <td>Next week</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>All weeks</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Specific week</td>
+        </tr>
+    </table>
+
 </div>
