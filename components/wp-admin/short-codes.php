@@ -26,6 +26,7 @@ function plugin_get_registered_short_codes() {
 
 function knvb($parameters) {
     $short_codes = plugin_get_registered_short_codes();
+    global $cache;
 
     if(!isset($parameters['name']) || !isset($short_codes[$parameters['name']])) {
         return "ERROR: Invalid or undefined knvb plugin name action";
@@ -41,11 +42,11 @@ function knvb($parameters) {
 
     //Check cache
     $InstanceCache = CacheManager::getInstance('files');
-    $key = $parameters['name'].'_'.md5(json_encode($parameters));
+    $key = $parameters['name'].'_'.json_encode($parameters);
     $CachedString = $InstanceCache->getItem($key);
 
 
-    if (is_null($CachedString->get())) {
+    if (is_null($CachedString->get()) || !$cache) {
         $result = "";
         try {
             $result = $short_code['callback']($parameters);
