@@ -17,7 +17,7 @@ function knvb_club_schedule($parameters) {
     $matches = array();
 
     foreach($club->getTeams() as $team){
-        $teamMatches = $team->getSchedule($parameters['weeknummer']);
+        $teamMatches = $team->getSchedule($parameters['week-number']);
         foreach($teamMatches as $match) {
             array_push($matches, $match);
         }
@@ -30,8 +30,12 @@ function knvb_club_schedule($parameters) {
     usort($matches, "sortByTime");
 
     $tpl->assign('matches', $matches);
+    $tpl->assign('logo', $parameters['logo'] == 'yes');
     return $tpl->draw('schedule/club_schedule', true);
 }
-plugin_register_short_code('club-schedule', 'Show the schedule of the club.', knvb_club_schedule, array('weeknummer' => "C"));
+plugin_register_short_code('club-schedule', 'Show the schedule of the club.', knvb_club_schedule, array(
+    "week-number" => "14",
+    "logo" => "yes"
+));
 
 ?>

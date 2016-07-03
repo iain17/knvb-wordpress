@@ -26,26 +26,39 @@
     </form>
 
     <h1>Short codes</h1>
-        <table style="width:100%">
+    <table style="width:100%">
+        <tr>
+            <td>Team</td>
+            <?php foreach($codes as $name => $code) {
+                if(!array_key_exists('team-id', $code['parameters']))
+                    continue; ?>
+                <td><?php echo $code['description']; ?></td>
+            <?php } ?>
+        </tr>
+        <?php foreach($teams as $team): ?>
             <tr>
-                <td>Team</td>
-                <?php foreach($codes as $code): ?>
-                    <td><?php echo $code['description']; ?></td>
-                <?php endforeach; ?>
+                <td><?php echo $team->getName(); ?></td>
+                <?php foreach($codes as $name => $code) {
+                    if(!array_key_exists('team-id', $code['parameters']))
+                        continue;
+                    ?>
+                    <td>
+                        [knvb name="<?php echo $name ?>"
+                        <?php foreach($code['parameters'] as $key => $defaultValue): ?>
+                            <?php echo $key; ?>="<?php echo $key == 'team-id' ? $team->teamid : $defaultValue; ?>"
+                        <?php endforeach; ?>
+                        ]
+                    </td>
+                <?php } ?>
             </tr>
-            <?php foreach($teams as $team): ?>
-                <tr>
-                    <td><?php echo $team->getName(); ?></td>
-                    <?php foreach($codes as $name => $code): ?>
-                        <td>
-                            [knvb name="<?php echo $name ?>"
-                            <?php foreach($code['parameters'] as $key => $defaultValue): ?>
-                                <?php echo $key; ?>="<?php echo $key == 'team-id' ? $team->teamid : $defaultValue; ?>"
-                            <?php endforeach; ?>
-                            ]
-                        </td>
-                    <?php endforeach; ?>
-                </tr>
-            <?php endforeach; ?>
-        </table>
+        <?php endforeach; ?>
+    </table>
+
+    <?php foreach($codes as $name => $code) {
+        if(array_key_exists('team-id', $code['parameters']))
+            continue; ?>
+        <h2><?php echo $code['description']; ?></h2>
+        <pre>[knvb name="<?php echo $name ?>" <?php foreach($code['parameters'] as $key => $defaultValue): ?><?php echo $key; ?>="<?php echo $key == 'team-id' ? $team->teamid : $defaultValue; ?>" <?php endforeach;?>]</pre>
+    <?php } ?>
+
 </div>

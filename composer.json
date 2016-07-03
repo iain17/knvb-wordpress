@@ -1,13 +1,16 @@
 {
+  "name": "iain17/knvb-wordpress",
+  "description": "A Wordpress that shows the status off a Dutch football club using the official KNVB api..",
+  "license": "MIT",
+  "type": "project",
   "repositories": [
-    //Contains a few fixes to the api wrapper while I worked on it.
-    {
-      "url": "https://github.com/iain17/php-knvb-dataservice-api",
-      "type": "git"
-    }
-  ],
-  "require": {
-    "fruitcakestudio/knvb-dataservice-api": "^0.2.1",
-    "rain/raintpl": "^3.1"
+  {
+    "type": "vcs",
+    "url": "https://github.com/iain17/php-knvb-dataservice-api"
   }
+  ],
+    "require": {
+      "fruitcakestudio/knvb-dataservice-api": "dev-dev-bugfix",
+      "rain/raintpl": "^3.1"
+    }
 }

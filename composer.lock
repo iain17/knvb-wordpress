@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ea1e5a4ce1b6087e96f4bdc4f449c063",
-    "content-hash": "c8f845949fbfe62a4bf40fe5e4901923",
+    "hash": "d78fc7b7d03f2f9dc07cb2ca3edf8a0b",
+    "content-hash": "95f80fa09954fe9fc8b9f71ea664a720",
     "packages": [
         {
             "name": "fruitcakestudio/knvb-dataservice-api",
-            "version": "v0.2.1",
+            "version": "dev-dev-bugfix",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fruitcake/php-knvb-dataservice-api.git",
-                "reference": "9cf3fedf8e346b22e159c867f82348080b36a04a"
+                "url": "https://github.com/iain17/php-knvb-dataservice-api.git",
+                "reference": "f71d20b1210293614cb90b09c59fc7570a305584"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fruitcake/php-knvb-dataservice-api/zipball/9cf3fedf8e346b22e159c867f82348080b36a04a",
-                "reference": "9cf3fedf8e346b22e159c867f82348080b36a04a",
+                "url": "https://api.github.com/repos/iain17/php-knvb-dataservice-api/zipball/f71d20b1210293614cb90b09c59fc7570a305584",
+                "reference": "f71d20b1210293614cb90b09c59fc7570a305584",
                 "shasum": ""
             },
             "require": {
@@ -37,7 +37,6 @@
                     "KNVB\\Dataservice\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -53,7 +52,10 @@
                 "knvb",
                 "sportlink"
             ],
-            "time": "2016-02-15 09:12:32"
+            "support": {
+                "source": "https://github.com/iain17/php-knvb-dataservice-api/tree/dev-bugfix"
+            },
+            "time": "2016-07-03 01:27:01"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -342,7 +344,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "fruitcakestudio/knvb-dataservice-api": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

@@ -1,0 +1,182 @@
+{if="isset($home) || isset($out)"}
+    {if="isset($home)"}
+        <table class="games thuis" color="#FF0000">
+            <tr>
+                <th class="home-title" colspan="7">Thuis</th>
+            </tr>
+            <tr>
+                <th>Datum</th>
+                <th>Tijd</th>
+                <th>Thuisclub</th>
+                <th>Uitclub</th>
+                <th>Score</th>
+                <th>Scheidsrechter</th>
+                <th>Soort</th>
+            </tr>
+            {loop="$home"}
+            <tr>
+                <td class="date">{$value->Datum|substr:8,2}-{$value->Datum|substr:5,2}-{$value->Datum|substr:0,4}</td>
+                <td class="time">{$value->Tijd|substr:0,2}:{$value->Tijd|substr:2,2}</td>
+                <td class="home-name">
+                    {if="$logo && $value->ThuisLogo"}
+                        <img alt="Clublogo van {$value->ThuisClub}" src="{$value->ThuisLogo}" />
+                    {else}
+                        {$value->ThuisClub}
+                        {if="$value->Kleedkamer_thuis"}
+                            <span class="kleedkamer"><span class="label">Kleedkamer:</span> {$value->Kleedkamer_thuis}</span>
+                        {/if}
+                    {/if}
+                </td>
+                <td class="guest-name">
+                    {if="$logo && $value->UitLogo"}
+                        <img alt="Clublogo van {$value->UitClub}" src="{$value->UitLogo}" />
+                    {else}
+                        {$value->UitClub}
+                        {if="$value->Kleedkamer_uit"}
+                        <span class="kleedkamer"><span class="label">Kleedkamer:</span> {$value->Kleedkamer_uit}</span>
+                        {/if}
+                    {/if}
+                </td>
+                <td>{$value->PuntenTeam1} - {$value->PuntenTeam2}</td>
+                <td class="scheidsrechter">{$value->Scheidsrechter}</td>
+                <td class="comptype">
+                    {if="$value->CompType == 'R'"}
+                    Competitie
+                    {elseif="$value->CompType == 'B'"}
+                    Beker
+                    {elseif="$value->CompType == 'N'"}
+                    Nacompetitie
+                    {elseif="$value->CompType == 'V'"}
+                    Vriendschappelijk
+                    {/if}
+                </td>
+            </tr>
+            {else}
+            <tr>
+                <td class="nothing" colspan="{if="$logo"}9{else}7{/if}">Momenteel is er geen thuis-wedstrijdenoverzicht beschikbaar.</td>
+            </tr>
+            {/loop}
+        </table>
+    {/if}
+    {if="isset($out)"}
+        <table class="games uit">
+            <tr>
+                <th class="home-title" colspan="7">Uit</th>
+            </tr>
+            <tr>
+                <th>Datum</th>
+                <th>Tijd</th>
+                <th>Thuisclub</th>
+                <th>Uitclub</th>
+                <th>Score</th>
+                <th>Scheidsrechter</th>
+                <th>Soort</th>
+            </tr>
+            {loop="$out"}
+            <tr>
+                <td class="date">{$value->Datum|substr:8,2}-{$value->Datum|substr:5,2}-{$value->Datum|substr:0,4}</td>
+                <td class="time">{$value->Tijd|substr:0,2}:{$value->Tijd|substr:2,2}</td>
+                <td class="home-name">
+                    {if="$logo && $value->ThuisLogo"}
+                    <img alt="Clublogo van {$value->ThuisClub}" src="{$value->ThuisLogo}" />
+                    {else}
+                    {$value->ThuisClub}
+                    {if="$value->Kleedkamer_thuis"}
+                    <span class="kleedkamer"><span class="label">Kleedkamer:</span> {$value->Kleedkamer_thuis}</span>
+                    {/if}
+                    {/if}
+                </td>
+                <td class="guest-name">
+                    {if="$logo && $value->UitLogo"}
+                    <img alt="Clublogo van {$value->UitClub}" src="{$value->UitLogo}" />
+                    {else}
+                    {$value->UitClub}
+                    {if="$value->Kleedkamer_uit"}
+                    <span class="kleedkamer"><span class="label">Kleedkamer:</span> {$value->Kleedkamer_uit}</span>
+                    {/if}
+                    {/if}
+                </td>
+                <td>{$value->PuntenTeam1} - {$value->PuntenTeam2}</td>
+                <td class="scheidsrechter">{$value->Scheidsrechter}</td>
+                <td class="comptype">
+                    {if="$value->CompType == 'R'"}
+                    Competitie
+
+                    {elseif="$value->CompType == 'B'"}
+                    Beker
+
+                    {elseif="$value->CompType == 'N'"}
+                    Nacompetitie
+
+                    {elseif="$value->CompType == 'V'"}
+                    Vriendschappelijk
+                    {/if}
+                </td>
+            </tr>
+            {else}
+            <tr>
+                <td class="nothing" colspan="{if="$logo"}9{else}7{/if}">Momenteel is er geen uit-wedstrijdenoverzicht beschikbaar.</td>
+            </tr>
+            {/loop}
+        </table>
+    {/if}
+{else}
+    <table class="games uit">
+        <tr>
+            <th>Datum</th>
+            <th>Tijd</th>
+            <th>Thuisclub</th>
+            <th>Uitclub</th>
+            <th>Score</th>
+            <th>Scheidsrechter</th>
+            <th>Soort</th>
+        </tr>
+        {loop="$results"}
+        <tr>
+            <td class="date">{$value->Datum|substr:8,2}-{$value->Datum|substr:5,2}-{$value->Datum|substr:0,4}</td>
+            <td class="time">{$value->Tijd|substr:0,2}:{$value->Tijd|substr:2,2}</td>
+            <td class="home-name">
+                {if="$logo && $value->ThuisLogo"}
+                <img alt="Clublogo van {$value->ThuisClub}" src="{$value->ThuisLogo}" />
+                {else}
+                {$value->ThuisClub}
+                {if="$value->Kleedkamer_thuis"}
+                <span class="kleedkamer"><span class="label">Kleedkamer:</span> {$value->Kleedkamer_thuis}</span>
+                {/if}
+                {/if}
+            </td>
+            <td class="guest-name">
+                {if="$logo && $value->UitLogo"}
+                <img alt="Clublogo van {$value->UitClub}" src="{$value->UitLogo}" />
+                {else}
+                {$value->UitClub}
+                {if="$value->Kleedkamer_uit"}
+                <span class="kleedkamer"><span class="label">Kleedkamer:</span> {$value->Kleedkamer_uit}</span>
+                {/if}
+                {/if}
+            </td>
+            <td class="points">{if="$value->PuntenTeam1"}{$value->PuntenTeam1} - {$value->PuntenTeam2}{/if}</td>
+            <td>{$value->PuntenTeam1} - {$value->PuntenTeam2}</td>
+            <td class="scheidsrechter">{$value->Scheidsrechter}</td>
+            <td class="comptype">
+                {if="$value->CompType == 'R'"}
+                Competitie
+
+                {elseif="$value->CompType == 'B'"}
+                Beker
+
+                {elseif="$value->CompType == 'N'"}
+                Nacompetitie
+
+                {elseif="$value->CompType == 'V'"}
+                Vriendschappelijk
+                {/if}
+            </td>
+        </tr>
+        {else}
+        <tr>
+            <td class="nothing">Momenteel is er geen wedstrijdenoverzicht beschikbaar.</td>
+        </tr>
+        {/loop}
+    </table>
+{/if}
