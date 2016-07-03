@@ -81,12 +81,12 @@ function knvb_club_result($parameters) {
 }
 plugin_register_short_code('club-result', 'Show the result of the club.', knvb_club_result, array(
     "week-number" => "14",
-    "logo" => "yes",
+    "logo" => "no",
     "show-home" => "yes",
     "show-out" => "yes",
-    "extended" => "yes",
+    "extended" => "no",
     "order-by" => "desc",
-    "limit" => 0
+    "limit" => 10
 ));
 
 ?>

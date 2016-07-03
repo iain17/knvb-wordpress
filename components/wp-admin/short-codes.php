@@ -1,5 +1,5 @@
 <?php
-
+use phpFastCache\CacheManager;
 $short_codes = array();
 
 function plugin_register_short_code($name, $description, $callback, $parameters) {
@@ -34,19 +34,30 @@ function knvb($parameters) {
 
     //Set parameters to default value if not set
     foreach($short_code['parameters'] as $key => $default_value) {
-        if(!isset($parameters[$key]))
+        if (!isset($parameters[$key])) {
             $parameters[$key] = $default_value;
+        }
     }
 
-    //TODO: Do stuff with cache.
+    //Check cache
+    $InstanceCache = CacheManager::getInstance('files');
+    $key = $parameters['name'].'_'.md5(json_encode($parameters));
+    $CachedString = $InstanceCache->getItem($key);
 
-    $result = "";
-    try {
-        $result = $short_code['callback']($parameters);
-    }catch (Exception $e) {
-        $result = $e->getMessage();
+
+    if (is_null($CachedString->get())) {
+        $result = "";
+        try {
+            $result = $short_code['callback']($parameters);
+            $CachedString->set($result)->expiresAfter(900);//in seconds, also accepts Datetime
+            $InstanceCache->save($CachedString);
+        }catch (Exception $e) {
+            $result = $e->getMessage();
+        }
+
+        return $result;
     }
-    return $result;
+    return $CachedString->get();
 }
 
 add_shortcode('knvb', 'knvb');

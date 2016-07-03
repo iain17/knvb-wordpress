@@ -11,6 +11,7 @@
   ],
     "require": {
       "fruitcakestudio/knvb-dataservice-api": "dev-dev-bugfix",
-      "rain/raintpl": "^3.1"
+      "rain/raintpl": "^3.1",
+    "phpFastCache/phpFastCache": "^5.0"
     }
 }

@@ -24,10 +24,20 @@ function knvb_club_schedule($parameters) {
     }
 
     //Sort by time
-    function sortByTime($a, $b ) {
+    function sortByTimeASC($a, $b ) {
         return $a->getTime() - $b->getTime();
     }
-    usort($matches, "sortByTime");
+    function sortByTimeDESC($a, $b ) {
+        return $b->getTime() - $a->getTime();
+    }
+
+    if($parameters['order-by'] == 'asc') {
+        usort($matches, "sortByTimeASC");
+    } elseif($parameters['order-by'] == 'desc') {
+        usort($matches, "sortByTimeDESC");
+    } else {
+        die("knvb_club_result: INVALID ORDER-BY. EITHER asc OR desc");
+    }
 
     $tpl->assign('matches', $matches);
     $tpl->assign('logo', $parameters['logo'] == 'yes');
@@ -35,7 +45,8 @@ function knvb_club_schedule($parameters) {
 }
 plugin_register_short_code('club-schedule', 'Show the schedule of the club.', knvb_club_schedule, array(
     "week-number" => "14",
-    "logo" => "yes"
+    "logo" => "yes",
+    "order-by" => "asc",
 ));
 
 ?>

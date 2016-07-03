@@ -11,6 +11,7 @@
 require_once  'vendor/autoload.php';
 use KNVB\Dataservice\Api;
 use Rain\Tpl;
+use phpFastCache\CacheManager;
 
 define('DS', '/');
 define('RL', dirname(__FILE__) . DS);
@@ -34,6 +35,11 @@ function getClub() {
 Tpl::configure(array(
     "tpl_dir"       => RL."components/",
     "cache_dir"     => RL."cache/"
+));
+
+// Setup File Path on your config files
+CacheManager::setup(array(
+    "path" =>  RL."cache/",
 ));
 
 //Helpers
