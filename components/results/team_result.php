@@ -12,17 +12,11 @@
 use Rain\Tpl;
 use KNVB\Dataservice\Exception\MissingAttributeException;
 
-function knvb_club_result($parameters) {
+function knvb_team_result($parameters) {
     $tpl = new Tpl;
     $club = getClub();
-    $results = array();
-
-    foreach($club->getTeams() as $team){
-        $teamResults = $team->getResults($parameters['week-number']);
-        foreach($teamResults as $result) {
-            array_push($results, $result);
-        }
-    }
+    $team = $club->getTeam($parameters['team-id']);
+    $results = $team->getResults($parameters['week-number']);
 
     //limit
     $parameters['limit'] = intval($parameters['limit']);
@@ -30,7 +24,6 @@ function knvb_club_result($parameters) {
         $results = array_slice($results, 0, $parameters['limit']);
     }
 
-    //Sort by time
     if($parameters['order-by'] == 'asc') {
         usort($results, "sortByTimeASC");
     } elseif($parameters['order-by'] == 'desc') {
@@ -72,14 +65,15 @@ function knvb_club_result($parameters) {
         return $tpl->draw('results/result', true);
     }
 }
-plugin_register_short_code('club-result', 'Show the result of the club.', knvb_club_result, array(
-    "week-number" => "14",
+plugin_register_short_code('team-result', 'Show the result of a team.', knvb_team_result, array(
+    "week-number" => "A",
     "logo" => "no",
-    "show-home" => "yes",
-    "show-out" => "yes",
-    "extended" => "no",
+    "show-home" => "no",
+    "show-out" => "no",
+    "extended" => "yes",
     "order-by" => "desc",
-    "limit" => 10
+    "limit" => 0,
+    'team-id' => 162813
 ));
 
 ?>

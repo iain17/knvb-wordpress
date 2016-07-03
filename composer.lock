@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "14263c9e4c959ec692330bc8830ba32b",
-    "content-hash": "3eb2230918dfe431d524083f039aab9f",
+    "hash": "3a89e17d039191a3370c1b1b4760663a",
+    "content-hash": "32893b737e9aae5d88b19236229d2c1e",
     "packages": [
         {
             "name": "fruitcakestudio/knvb-dataservice-api",
@@ -257,24 +257,24 @@
         },
         {
             "name": "phpfastcache/phpfastcache",
-            "version": "5.0.1",
+            "version": "dev-final",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPSocialNetwork/phpfastcache.git",
-                "reference": "c691a4e2690a438ecc3c615879a7dee8785ff58a"
+                "reference": "835e671e11af00d140ae4a9cec84eff9d68930fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPSocialNetwork/phpfastcache/zipball/c691a4e2690a438ecc3c615879a7dee8785ff58a",
-                "reference": "c691a4e2690a438ecc3c615879a7dee8785ff58a",
+                "url": "https://api.github.com/repos/PHPSocialNetwork/phpfastcache/zipball/835e671e11af00d140ae4a9cec84eff9d68930fc",
+                "reference": "835e671e11af00d140ae4a9cec84eff9d68930fc",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "php": ">=5.5.0",
-                "phpfastcache/phpssdb": "0.0.x",
-                "predis/predis": "1.0.x",
-                "psr/cache": "1.0.x"
+                "phpfastcache/phpssdb": "~0.0.0",
+                "predis/predis": "~1.0.0",
+                "psr/cache": "~1.0.0"
             },
             "suggest": {
                 "ext-apc": "*",
@@ -334,7 +334,7 @@
                 "wincache",
                 "xcache"
             ],
-            "time": "2016-07-02 17:27:24"
+            "time": "2016-07-03 12:30:57"
         },
         {
             "name": "phpfastcache/phpssdb",
@@ -572,7 +572,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fruitcakestudio/knvb-dataservice-api": 20
+        "fruitcakestudio/knvb-dataservice-api": 20,
+        "phpfastcache/phpfastcache": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

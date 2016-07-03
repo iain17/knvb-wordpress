@@ -23,12 +23,10 @@ function knvb_club_schedule($parameters) {
         }
     }
 
-    //Sort by time
-    function sortByTimeASC($a, $b ) {
-        return $a->getTime() - $b->getTime();
-    }
-    function sortByTimeDESC($a, $b ) {
-        return $b->getTime() - $a->getTime();
+    //limit
+    $parameters['limit'] = intval($parameters['limit']);
+    if($parameters['limit'] != '0') {
+        $matches = array_slice($matches, 0, $parameters['limit']);
     }
 
     if($parameters['order-by'] == 'asc') {
@@ -44,9 +42,10 @@ function knvb_club_schedule($parameters) {
     return $tpl->draw('schedule/club_schedule', true);
 }
 plugin_register_short_code('club-schedule', 'Show the schedule of the club.', knvb_club_schedule, array(
-    "week-number" => "14",
+    "week-number" => "C",
     "logo" => "yes",
     "order-by" => "asc",
+    "limit" => 0,
 ));
 
 ?>

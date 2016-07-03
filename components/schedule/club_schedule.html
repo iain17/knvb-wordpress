@@ -1,4 +1,12 @@
-<table class="schedule">
+<table class="schedule resultaten" style="width:100%">
+    <tr class="resultsheader">
+        <td>Datum</td>
+        <td>Tijd</td>
+        <td>Thuisclub</td>
+        <td>Uitclub</td>
+        <td>Scheidsrechter</td>
+        <td>Soort</td>
+    </tr>
     {loop="$matches"}
     <tr>
         <td class="date">{$value->Datum|substr:8,2}-{$value->Datum|substr:5,2}-{$value->Datum|substr:0,4}</td>
@@ -11,7 +19,6 @@
         </td>
         {/if}
         <td class="home-name">{$value->ThuisClub}</td>
-        <td>VS</td>
         {if="$logo"}
         <td class="guest-logo">
             {if="$value->UitLogo"}
@@ -35,7 +42,7 @@
     </tr>
     {else}
     <tr>
-        <td class="nothing">Momenteel is er geen programma beschikbaar.</td>
+        <td class="nothing" colspan="6">Momenteel is er geen programma beschikbaar.</td>
     </tr>
     {/loop}
 </table>
