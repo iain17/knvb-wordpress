@@ -14,14 +14,22 @@ use Rain\Tpl;
 function knvb_club_schedule($parameters) {
     $tpl = new Tpl;
     $club = getClub();
-    $schedules = array();
+    $matches = array();
 
     foreach($club->getTeams() as $team){
-        $schedules[] = $team->getSchedule($parameters['weeknummer']);
+        $teamMatches = $team->getSchedule($parameters['weeknummer']);
+        foreach($teamMatches as $match) {
+            array_push($matches, $match);
+        }
     }
 
-    die('test');
-    $tpl->assign('schedules', $schedules);
+    //Sort by time
+    function sortByTime($a, $b ) {
+        return $a->getTime() - $b->getTime();
+    }
+    usort($matches, "sortByTime");
+
+    $tpl->assign('matches', $matches);
     return $tpl->draw('schedule/club_schedule', true);
 }
 plugin_register_short_code('club-schedule', 'Show the schedule of the club.', knvb_club_schedule, array('weeknummer' => "C"));

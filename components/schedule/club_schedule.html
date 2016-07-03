@@ -1,27 +1,41 @@
-<table class="ranking">
+<table class="schedule">
+    {loop="$matches"}
     <tr>
-        <th>POS</th>
-        <th>Club</th>
-        <th>GW</th>
-        <th>W</th>
-        <th>G</th>
-        <th>V</th>
-        <th>PTN</th>
-    </tr>
-    {loop="$ranks"}
-    <tr{if="substr($value->naam, 0, 4) == 'VVZ '"} class="self"{/if}>
-        <td class="position">{$value->Positie}</td>
-        {if="$logo"}<td class="logo">{if="$value->logo"}<img alt="Clublogo van {$value->naam}" src="{$value->logo}" />{/if}</td>{/if}
-        <td class="name">{$value->naam}</td>
-        <td class="played" title="Gespeeld">{$value->Gespeeld}</td>
-        <td class="won" title="Gewonnen">{$value->Gewonnen}</td>
-        <td class="tie" title="Gelijk">{$value->Gelijk}</td>
-        <td class="lost" title="Verloren">{$value->Verloren}</td>
-        <td class="points" title="Punten">{$value->Punten}</td>
+        <td class="date">{$value->Datum|substr:8,2}-{$value->Datum|substr:5,2}-{$value->Datum|substr:0,4}</td>
+        <td class="time">{$value->Tijd|substr:0,2}:{$value->Tijd|substr:2,2}</td>
+        {if="$logo"}
+        <td class="home-logo">
+            {if="$value->ThuisLogo"}
+            <img alt="Clublogo van {$value->ThuisClub}" src="{$value->ThuisLogo}" />
+            {/if}
+        </td>
+        {/if}
+        <td class="home-name">{$value->ThuisClub}</td>
+        <td>VS</td>
+        {if="$logo"}
+        <td class="guest-logo">
+            {if="$value->UitLogo"}
+            <img alt="Clublogo van {$value->UitClub}" src="{$value->UitLogo}" />
+            {/if}
+        </td>
+        {/if}
+        <td class="guest-name">{$value->UitClub}</td>
+        <td class="scheidsrechter">{$value->Scheidsrechter}</td>
+        <td class="comptype">
+            {if="$value->CompType == 'R'"}
+            Competitie
+            {elseif="$value->CompType == 'B'"}
+            Beker
+            {elseif="$value->CompType == 'N'"}
+            Nacompetitie
+            {elseif="$value->CompType == 'V'"}
+            Vriendschappelijk
+            {/if}
+        </td>
     </tr>
     {else}
     <tr>
-        <td class="nothing">Momenteel is er geen stand beschikbaar.</td>
+        <td class="nothing">Momenteel is er geen programma beschikbaar.</td>
     </tr>
     {/loop}
 </table>
