@@ -50,7 +50,7 @@ function knvb($parameters) {
         $result = "";
         try {
             $result = $short_code['callback']($parameters);
-            $CachedString->set($result)->expiresAfter(900);//in seconds, also accepts Datetime
+            $CachedString->set($result)->expiresAfter(900);
             $InstanceCache->save($CachedString);
         }catch (Exception $e) {
             $result = $e->getMessage();
