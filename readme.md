@@ -1,4 +1,4 @@
-![alt tag](https://raw.githubusercontent.com/iain17/knvb-wordpress/master/knvb.png)
+![alt tag](https://raw.githubusercontent.com/iain17/knvb-wordpress/master/knvb-dataservice.png)
 # KNVB Wordpress plugin
 A Wordpress that shows the status off a Dutch football club using the official KNVB api.
 
