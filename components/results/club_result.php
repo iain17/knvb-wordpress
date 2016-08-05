@@ -24,12 +24,6 @@ function knvb_club_result($parameters) {
         }
     }
 
-    //limit
-    $parameters['limit'] = intval($parameters['limit']);
-    if($parameters['limit'] != '0') {
-        $results = array_slice($results, 0, $parameters['limit']);
-    }
-
     //Sort by time
     if($parameters['order-by'] == 'asc') {
         usort($results, "sortByTimeASC");
@@ -37,6 +31,12 @@ function knvb_club_result($parameters) {
         usort($results, "sortByTimeDESC");
     } else {
         die("knvb_club_result: INVALID ORDER-BY. EITHER asc OR desc");
+    }
+
+    //limit
+    $parameters['limit'] = intval($parameters['limit']);
+    if($parameters['limit'] != '0') {
+        $results = array_slice($results, 0, $parameters['limit']);
     }
 
     //Split between out and home matches
