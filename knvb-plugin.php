@@ -16,7 +16,7 @@ use phpFastCache\CacheManager;
 define('DS', '/');
 define('RL', dirname(__FILE__) . DS);
 
-$cache = true;
+$cache = false;
 
 //Quick helper that initiates fruitcakes project
 $club = null;

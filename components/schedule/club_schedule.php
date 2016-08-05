@@ -35,6 +35,14 @@ function knvb_club_schedule($parameters) {
         die("knvb_club_schedule: INVALID ORDER-BY. EITHER asc OR desc");
     }
 
+    if($parameters['hideExpired'] == 'yes') {
+        foreach($matches as $key => $match) {
+            if($match->getTime() < time()) {
+                unset($match[$key]);
+            }
+        }
+    }
+
     //limit
     $parameters['limit'] = intval($parameters['limit']);
     if($parameters['limit'] != '0') {
@@ -50,6 +58,7 @@ plugin_register_short_code('club-schedule', 'Show the schedule of the club.', kn
     "logo" => "yes",
     "order-by" => "asc",
     "limit" => 0,
+    "hideExpired" => "yes",
 ));
 
 ?>
