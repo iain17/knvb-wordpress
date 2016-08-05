@@ -8,7 +8,7 @@ Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A Wordpress that shows the status off a Dutch football club using the official KNVB api.
+A Wordpress plugin that shows the status off a Dutch football club using the official KNVB api.
 
 == Description ==
 
