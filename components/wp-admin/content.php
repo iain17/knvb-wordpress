@@ -89,4 +89,28 @@
         </tr>
     </table>
 
+    <h1>Competition types</h1>
+    <table style="width:100%">
+        <tr>
+            <td>Competition letter</td>
+            <td>Description</td>
+        </tr>
+        <tr>
+            <td>R</td>
+            <td>Regular competition</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>Cup competition</td>
+        </tr>
+        <tr>
+            <td>N</td>
+            <td>The playoffs</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>Friendly competition</td>
+        </tr>
+    </table>
+
 </div>

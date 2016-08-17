@@ -11,20 +11,20 @@
 // ==========================================================
 use Rain\Tpl;
 
-function knvb_club_schedule($parameters) {
+function knvb_team_schedule($parameters) {
     $tpl = new Tpl;
     $club = getClub();
     $matches = array();
+
+    $team = $club->getTeam($parameters['team-id']);
 
     if(!is_numeric($parameters['week-number']) && $parameters['week-number'] != 'A') {
         die("knvb_club_schedule: INVALID week number. Either a number or A");
     }
 
     $competitions = explode(',', $parameters['competitions']);
-    foreach($club->getTeams() as $team){
-        foreach($competitions as $competition) {
-            $matches = array_merge($matches, $team->getSchedule($parameters['week-number'], $competition));
-        }
+    foreach($competitions as $competition) {
+        $matches = array_merge($matches, $team->getSchedule($parameters['week-number'], $competition));
     }
 
     if($parameters['order-by'] == 'asc') {
@@ -54,14 +54,15 @@ function knvb_club_schedule($parameters) {
     $tpl->assign('logo', $parameters['logo'] == 'yes');
     return $tpl->draw('schedule/club_schedule', true);
 }
-plugin_register_short_code('club-schedule', 'Show the schedule of the club.', knvb_club_schedule, array(
+plugin_register_short_code('team-schedule', 'Show the schedule of a team.', knvb_team_schedule, array(
     "competitions" => "R,B,N,V",
     "week-number" => "A",
     "logo" => "no",
     "order-by" => "asc",
-    "limit" => 0,
+    "limit" => 10,
     "hideExpired" => "yes",
-    "extended" => "yes"
+    "extended" => "yes",
+    "team-id" => 162813
 ));
 
 ?>

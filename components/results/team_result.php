@@ -15,8 +15,13 @@ use KNVB\Dataservice\Exception\MissingAttributeException;
 function knvb_team_result($parameters) {
     $tpl = new Tpl;
     $club = getClub();
+    $competitions = explode(',', $parameters['competitions']);
     $team = $club->getTeam($parameters['team-id']);
-    $results = $team->getResults($parameters['week-number']);
+
+    $results = array();
+    foreach($competitions as $competition) {
+        $results = array_merge($results, $team->getResults($parameters['week-number'], $competition));
+    }
 
     //limit
     $parameters['limit'] = intval($parameters['limit']);
@@ -66,6 +71,7 @@ function knvb_team_result($parameters) {
     }
 }
 plugin_register_short_code('team-result', 'Show the result of a team.', knvb_team_result, array(
+    "competitions" => "R,B,N,V",
     "week-number" => "A",
     "logo" => "no",
     "show-home" => "no",
@@ -73,7 +79,7 @@ plugin_register_short_code('team-result', 'Show the result of a team.', knvb_tea
     "extended" => "yes",
     "order-by" => "desc",
     "limit" => 0,
-    'team-id' => 162813
+    "team-id" => 162813
 ));
 
 ?>

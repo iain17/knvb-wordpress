@@ -1,48 +1,60 @@
-<table class="schedule resultaten" style="width:100%">
-    <tr class="resultsheader">
-        <td>Datum</td>
-        <td>Tijd</td>
-        <td>Thuisclub</td>
-        <td>Uitclub</td>
-        <td>Scheidsrechter</td>
-        <td>Soort</td>
-    </tr>
-    {loop="$matches"}
-    <tr>
-        <td class="date">{$value->Datum|substr:8,2}-{$value->Datum|substr:5,2}-{$value->Datum|substr:0,4}</td>
-        <td class="time">{$value->Tijd|substr:0,2}:{$value->Tijd|substr:2,2}</td>
-        {if="$logo"}
-        <td class="home-logo">
-            {if="$value->ThuisLogo"}
-            <img alt="Clublogo van {$value->ThuisClub}" src="{$value->ThuisLogo}" />
-            {/if}
-        </td>
-        {/if}
-        <td class="home-name">{$value->ThuisClub}</td>
-        {if="$logo"}
-        <td class="guest-logo">
-            {if="$value->UitLogo"}
-            <img alt="Clublogo van {$value->UitClub}" src="{$value->UitLogo}" />
-            {/if}
-        </td>
-        {/if}
-        <td class="guest-name">{$value->UitClub}</td>
-        <td class="scheidsrechter">{$value->Scheidsrechter}</td>
-        <td class="comptype">
-            {if="$value->CompType == 'R'"}
-            Competitie
-            {elseif="$value->CompType == 'B'"}
-            Beker
-            {elseif="$value->CompType == 'N'"}
-            Nacompetitie
-            {elseif="$value->CompType == 'V'"}
-            Vriendschappelijk
-            {/if}
-        </td>
-    </tr>
-    {else}
-    <tr>
-        <td class="nothing" colspan="6">Momenteel is er geen programma beschikbaar.</td>
-    </tr>
-    {/loop}
-</table>
+<div class="knvba">
+    <table class="schedule resultaten" style="width:100%">
+        <thead>
+            <tr class="resultsheader">
+                <th>Datum</th>
+                <th>Tijd</th>
+                <th>Thuisclub</th>
+                <th>Uitclub</th>
+                {if="$extended"}
+                    <th>Scheidsrechter</th>
+                    <th>Soort</th>
+                {/if}
+            </tr>
+        </thead>
+        <tbody>
+            {loop="$matches"}
+            <tr>
+                <td class="date">{$value->Datum|substr:8,2}-{$value->Datum|substr:5,2}-{$value->Datum|substr:0,4}</td>
+                <td class="time">{$value->Tijd|substr:0,2}:{$value->Tijd|substr:2,2}</td>
+                {if="$logo"}
+                    <td class="home-logo" style="text-align: center">
+                        {if="$value->ThuisLogo"}
+                        <img alt="Clublogo van {$value->ThuisClub}" src="{$value->ThuisLogo}" width="32px" />
+                        {/if}
+                    </td>
+                {else}
+                    <td class="home-name">{$value->ThuisClub}</td>
+                {/if}
+                {if="$logo"}
+                    <td class="guest-logo" style="text-align: center">
+                        {if="$value->UitLogo"}
+                        <img alt="Clublogo van {$value->UitClub}" src="{$value->UitLogo}" width="32px" />
+                        {/if}
+                    </td>
+                {else}
+                    <td class="guest-name">{$value->UitClub}</td>
+                {/if}
+                {if="$extended"}
+                    <td class="scheidsrechter">{$value->Scheidsrechter}</td>
+                    <td class="comptype">
+                        {if="$value->CompType == 'R'"}
+                        Competitie
+                        {elseif="$value->CompType == 'B'"}
+                        Beker
+                        {elseif="$value->CompType == 'N'"}
+                        Nacompetitie
+                        {elseif="$value->CompType == 'V'"}
+                        Vriendschappelijk
+                        {/if}
+                    </td>
+                {/if}
+            </tr>
+            {else}
+            <tr>
+                <td class="nothing" colspan="6" style="text-align: center;">Momenteel is er geen programma beschikbaar.</td>
+            </tr>
+            {/loop}
+        </tbody>
+    </table>
+</div>

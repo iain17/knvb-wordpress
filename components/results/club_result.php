@@ -17,10 +17,13 @@ function knvb_club_result($parameters) {
     $club = getClub();
     $results = array();
 
-    foreach($club->getTeams() as $team){
-        $teamResults = $team->getResults($parameters['week-number']);
-        foreach($teamResults as $result) {
-            array_push($results, $result);
+    $competitions = explode(',', $parameters['competitions']);
+    foreach($club->getTeams() as $team) {
+        foreach($competitions as $competition) {
+            $teamResults = $team->getResults($parameters['week-number'], $competition);
+            foreach ($teamResults as $result) {
+                array_push($results, $result);
+            }
         }
     }
 
@@ -73,13 +76,14 @@ function knvb_club_result($parameters) {
     }
 }
 plugin_register_short_code('club-result', 'Show the result of the club.', knvb_club_result, array(
+    "competitions" => "R,B,N,V",
     "week-number" => "14",
     "logo" => "no",
     "show-home" => "yes",
     "show-out" => "yes",
     "extended" => "no",
     "order-by" => "desc",
-    "limit" => 10
+    "limit" => 10,
 ));
 
 ?>

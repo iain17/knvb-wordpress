@@ -5,8 +5,8 @@
         <td>Thuisclub</td>
         <td>Uitclub</td>
         <td>Score</td>
-        <td>Scheidsrechter</td>
-        <td>Soort</td>
+        <!--<td>Scheidsrechter</td>-->
+        <!--<td>Soort</td>-->
     </tr>
     {loop="$results"}
     <tr>
@@ -17,18 +17,18 @@
         {if="$logo"}<td class="guest-logo">{if="$value->UitLogo"}<img alt="Clublogo van {$value->UitClub}" src="{$value->UitLogo}" />{/if}</td>{/if}
         <td class="guest-name">{$value->UitClub}</td>
         <td class="points">{$value->PuntenTeam1} - {$value->PuntenTeam2}</td>
-        <td class="scheidsrechter">{$value->Scheidsrechter}</td>
-        <td class="comptype">
-            {if="$value->CompType == 'R'"}
-            Competitie
-            {elseif="$value->CompType == 'B'"}
-            Beker
-            {elseif="$value->CompType == 'N'"}
-            Nacompetitie
-            {elseif="$value->CompType == 'V'"}
-            Vriendschappelijk
-            {/if}
-        </td>
+        <!--<td class="scheidsrechter">{$value->Scheidsrechter}</td>-->
+        <!--<td class="comptype">-->
+            <!--{if="$value->CompType == 'R'"}-->
+            <!--Competitie-->
+            <!--{elseif="$value->CompType == 'B'"}-->
+            <!--Beker-->
+            <!--{elseif="$value->CompType == 'N'"}-->
+            <!--Nacompetitie-->
+            <!--{elseif="$value->CompType == 'V'"}-->
+            <!--Vriendschappelijk-->
+            <!--{/if}-->
+        <!--</td>-->
     </tr>
     {/loop}
 </table>

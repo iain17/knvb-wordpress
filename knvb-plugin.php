@@ -55,6 +55,7 @@ include_once(RL . 'components/wp-admin/main.php');
 //Shortcodes
 include_once(RL . 'components/ranking/team_rank.php');
 include_once(RL . 'components/schedule/club_schedule.php');
+include_once(RL . 'components/schedule/team_schedule.php');
 include_once(RL . 'components/results/club_result.php');
 include_once(RL . 'components/results/team_result.php');
 

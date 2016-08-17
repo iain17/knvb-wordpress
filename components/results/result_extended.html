@@ -155,7 +155,6 @@
                 {/if}
                 {/if}
             </td>
-            <td class="points">{if="$value->PuntenTeam1"}{$value->PuntenTeam1} - {$value->PuntenTeam2}{/if}</td>
             <td>{$value->PuntenTeam1} - {$value->PuntenTeam2}</td>
             <td class="scheidsrechter">{$value->Scheidsrechter}</td>
             <td class="comptype">
@@ -175,7 +174,7 @@
         </tr>
         {else}
         <tr>
-            <td class="nothing" colspan="7">Momenteel is er geen wedstrijdenresultaat beschikbaar.</td>
+            <td class="nothing" colspan="7" style="text-align: center;">Momenteel is er geen wedstrijdenresultaat beschikbaar.</td>
         </tr>
         {/loop}
     </table>
