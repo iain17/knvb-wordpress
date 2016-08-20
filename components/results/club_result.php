@@ -75,7 +75,7 @@ function knvb_club_result($parameters) {
         return $tpl->draw('results/result', true);
     }
 }
-plugin_register_short_code('club-result', 'Show the result of the club.', knvb_club_result, array(
+plugin_register_short_code('club-result', 'Show the result of the club.', "knvb_club_result", array(
     "competitions" => "R,B,N,V",
     "week-number" => "14",
     "logo" => "no",

@@ -3,10 +3,15 @@
  * Plugin Name: KNVB Wordpress plugin
  * Plugin URI: http://www.iMunro.nl
  * Description: A Wordpress plugin for https://github.com/fruitcake/php-knvb-dataservice-api
- * Version: 1.00
+ * Version: 1.01
  * Author: Iain Munro
  * Author URI: http://www.iMunro.nl
  * */
+//if($_SERVER['REMOTE_ADDR'] == '-') {
+//    ini_set('display_errors', 1);
+//    ini_set('display_startup_errors', 1);
+//    error_reporting(E_ALL);
+//}
 
 require_once  'vendor/autoload.php';
 use KNVB\Dataservice\Api;
@@ -16,7 +21,7 @@ use phpFastCache\CacheManager;
 define('DS', '/');
 define('RL', dirname(__FILE__) . DS);
 
-$cache = false;
+$cache = true;
 
 //Quick helper that initiates fruitcakes project
 $club = null;

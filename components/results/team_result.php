@@ -70,7 +70,7 @@ function knvb_team_result($parameters) {
         return $tpl->draw('results/result', true);
     }
 }
-plugin_register_short_code('team-result', 'Show the result of a team.', knvb_team_result, array(
+plugin_register_short_code('team-result', 'Show the result of a team.', "knvb_team_result", array(
     "competitions" => "R,B,N,V",
     "week-number" => "A",
     "logo" => "no",

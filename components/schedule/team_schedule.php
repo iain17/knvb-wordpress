@@ -24,7 +24,15 @@ function knvb_team_schedule($parameters) {
 
     $competitions = explode(',', $parameters['competitions']);
     foreach($competitions as $competition) {
-        $matches = array_merge($matches, $team->getSchedule($parameters['week-number'], $competition));
+        $newMatches = $team->getSchedule($parameters['week-number'], $competition);
+        foreach($newMatches as $match) {
+            if($parameters['hideExpired'] == 'yes') {
+                if ($match->getTime() < time()) {
+                    continue;
+                }
+                $matches[] = $match;
+            }
+        }
     }
 
     if($parameters['order-by'] == 'asc') {
@@ -33,14 +41,6 @@ function knvb_team_schedule($parameters) {
         usort($matches, "sortByTimeDESC");
     } else {
         die("knvb_club_schedule: INVALID ORDER-BY. EITHER asc OR desc");
-    }
-
-    if($parameters['hideExpired'] == 'yes') {
-        foreach($matches as $key => $match) {
-            if($match->getTime() < time()) {
-                unset($match[$key]);
-            }
-        }
     }
 
     //limit
@@ -54,7 +54,7 @@ function knvb_team_schedule($parameters) {
     $tpl->assign('logo', $parameters['logo'] == 'yes');
     return $tpl->draw('schedule/club_schedule', true);
 }
-plugin_register_short_code('team-schedule', 'Show the schedule of a team.', knvb_team_schedule, array(
+plugin_register_short_code('team-schedule', 'Show the schedule of a team.', "knvb_team_schedule", array(
     "competitions" => "R,B,N,V",
     "week-number" => "A",
     "logo" => "no",

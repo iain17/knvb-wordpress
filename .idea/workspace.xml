@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7edc495-fc7d-45da-8c4a-b546c91210e7" name="Default" comment="schedule remove expired option added.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/schedule/team_schedule.php" />
+    <list default="true" id="a7edc495-fc7d-45da-8c4a-b546c91210e7" name="Default" comment="Quick little fix.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/results/club_result.php" afterPath="$PROJECT_DIR$/components/results/club_result.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/schedule/club_schedule.html" afterPath="$PROJECT_DIR$/components/schedule/club_schedule.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/schedule/club_schedule.php" afterPath="$PROJECT_DIR$/components/schedule/club_schedule.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/wp-admin/content.php" afterPath="$PROJECT_DIR$/components/wp-admin/content.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knvb-plugin.php" afterPath="$PROJECT_DIR$/knvb-plugin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/results/result.html" afterPath="$PROJECT_DIR$/components/results/result.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/results/result_extended.html" afterPath="$PROJECT_DIR$/components/results/result_extended.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/ranking/team_rank.html" afterPath="$PROJECT_DIR$/components/ranking/team_rank.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/ranking/team_rank.php" afterPath="$PROJECT_DIR$/components/ranking/team_rank.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/results/team_result.php" afterPath="$PROJECT_DIR$/components/results/team_result.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/schedule/team_schedule.php" afterPath="$PROJECT_DIR$/components/schedule/team_schedule.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="knvb.iws" />
@@ -38,22 +33,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="club_schedule.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="club_schedule.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/schedule/club_schedule.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.625" vertical-offset="312" max-vertical-offset="945">
-              <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.76303315" vertical-offset="312" max-vertical-offset="945">
+              <caret line="62" column="16" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="team_schedule.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/components/schedule/team_schedule.php">
+      <file leaf-file-name="club_result.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/results/club_result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7156398" vertical-offset="327" max-vertical-offset="960">
-              <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+            <state vertical-scroll-proportion="-15.75" vertical-offset="627" max-vertical-offset="1260">
+              <caret line="77" column="92" selection-start-line="77" selection-start-column="92" selection-end-line="77" selection-end-column="92" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="knvb-plugin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/knvb-plugin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="1110">
+              <caret line="13" column="3" selection-start-line="9" selection-start-column="0" selection-end-line="13" selection-end-column="3" />
+              <folding>
+                <element signature="e#6#257#0#PHP" expanded="true" />
+                <element signature="e#449#474#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,7 +94,6 @@
         <option value="$PROJECT_DIR$/templates/results.html" />
         <option value="$PROJECT_DIR$/components/results/club-result.html" />
         <option value="$PROJECT_DIR$/components/results/club-result.php" />
-        <option value="$PROJECT_DIR$/vendor/fruitcakestudio/knvb-dataservice-api/src/Match.php" />
         <option value="$PROJECT_DIR$/components/results/club_result_long.html" />
         <option value="$PROJECT_DIR$/vendor/fruitcakestudio/knvb-dataservice-api/src/Exception/InvalidResponseException.php" />
         <option value="$PROJECT_DIR$/vendor/fruitcakestudio/knvb-dataservice-api/src/Exception/MissingAttributeException.php" />
@@ -98,19 +105,20 @@
         <option value="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Cache/ItemBaseTrait.php" />
         <option value="$PROJECT_DIR$/phpinfo.php" />
         <option value="$PROJECT_DIR$/readme.txt" />
-        <option value="$PROJECT_DIR$/components/wp-admin/short-codes.php" />
         <option value="$PROJECT_DIR$/vendor/fruitcakestudio/knvb-dataservice-api/src/Club.php" />
-        <option value="$PROJECT_DIR$/components/results/club_result.php" />
         <option value="$PROJECT_DIR$/components/results/result.html" />
         <option value="$PROJECT_DIR$/components/wp-admin/content.php" />
         <option value="$PROJECT_DIR$/components/results/result_extended.html" />
-        <option value="$PROJECT_DIR$/components/ranking/team_rank.php" />
         <option value="$PROJECT_DIR$/components/ranking/team_rank.html" />
-        <option value="$PROJECT_DIR$/components/results/team_result.php" />
-        <option value="$PROJECT_DIR$/knvb-plugin.php" />
         <option value="$PROJECT_DIR$/components/schedule/club_schedule.html" />
+        <option value="$PROJECT_DIR$/components/ranking/team_rank.php" />
+        <option value="$PROJECT_DIR$/components/wp-admin/short-codes.php" />
+        <option value="$PROJECT_DIR$/components/results/club_result.php" />
+        <option value="$PROJECT_DIR$/components/results/team_result.php" />
+        <option value="$PROJECT_DIR$/vendor/fruitcakestudio/knvb-dataservice-api/src/Match.php" />
         <option value="$PROJECT_DIR$/components/schedule/club_schedule.php" />
         <option value="$PROJECT_DIR$/components/schedule/team_schedule.php" />
+        <option value="$PROJECT_DIR$/knvb-plugin.php" />
       </list>
     </option>
   </component>
@@ -147,7 +155,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -240,6 +247,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -288,9 +296,6 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="3ce2005c-c661-4c74-a1ad-300b13761af1" server_name="rkpsc">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -298,6 +303,9 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="3ce2005c-c661-4c74-a1ad-300b13761af1" server_name="rkpsc">
       <method />
     </configuration>
     <list size="0" />
@@ -409,7 +417,13 @@
       <option name="project" value="LOCAL" />
       <updated>1470415380385</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added competitions parameters.&#10;Added team schedule shortcode.">
+      <created>1471452093213</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1471452093213</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -419,25 +433,25 @@
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32751092" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4753219" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32846716" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270073" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27594727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2800659" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -472,7 +486,8 @@
     <MESSAGE value="Added a wordpress readme.txt" />
     <MESSAGE value="Quick fix. First sort then limit." />
     <MESSAGE value="schedule remove expired option added." />
-    <option name="LAST_COMMIT_MESSAGE" value="schedule remove expired option added." />
+    <MESSAGE value="Added competitions parameters.&#10;Added team schedule shortcode." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added competitions parameters.&#10;Added team schedule shortcode." />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$/../../..</wordpressPath>
@@ -496,7 +511,7 @@
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#6#257#0#PHP" expanded="true" />
-            <element signature="e#296#321#0#PHP" expanded="true" />
+            <element signature="e#449#474#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -515,7 +530,7 @@
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <element signature="e#6#257#0#PHP" expanded="true" />
-            <element signature="e#296#321#0#PHP" expanded="true" />
+            <element signature="e#449#474#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -540,7 +555,7 @@
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <element signature="e#6#257#0#PHP" expanded="true" />
-            <element signature="e#296#321#0#PHP" expanded="true" />
+            <element signature="e#449#474#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -565,7 +580,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#257#0#PHP" expanded="true" />
-            <element signature="e#296#321#0#PHP" expanded="true" />
+            <element signature="e#449#474#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -585,9 +600,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider editor-type-id="MultiMarkdownFxHtmlEditor">
         <state />
       </provider>
@@ -595,6 +607,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
           <caret line="0" column="94" selection-start-line="0" selection-start-column="94" selection-end-line="0" selection-end-column="94" />
         </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/wp-admin/short-codes.php">
@@ -617,7 +632,7 @@
           <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
           <folding>
             <element signature="e#6#257#0#PHP" expanded="true" />
-            <element signature="e#296#321#0#PHP" expanded="true" />
+            <element signature="e#449#474#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -649,7 +664,7 @@
           <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
           <folding>
             <element signature="e#6#257#0#PHP" expanded="true" />
-            <element signature="e#296#321#0#PHP" expanded="true" />
+            <element signature="e#449#474#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -662,13 +677,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.lock">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.3876853" vertical-offset="3848" max-vertical-offset="4725">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -682,13 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34201586" vertical-offset="3508" max-vertical-offset="5220">
           <caret line="254" column="26" selection-start-line="254" selection-start-column="26" selection-end-line="254" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fruitcakestudio/knvb-dataservice-api/src/Match.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20611551" vertical-offset="1303" max-vertical-offset="3240">
-          <caret line="99" column="23" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -714,9 +722,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider editor-type-id="MultiMarkdownFxHtmlEditor">
         <state />
       </provider>
@@ -725,9 +730,7 @@
           <caret line="0" column="94" selection-start-line="0" selection-start-column="94" selection-end-line="0" selection-end-column="94" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knvb-dataservice.png">
-      <provider selected="true" editor-type-id="images">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
       </provider>
     </entry>
@@ -759,14 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/wp-admin/short-codes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80263156" vertical-offset="232" max-vertical-offset="1050">
-          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/fruitcakestudio/knvb-dataservice-api/src/Competition.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.375" vertical-offset="1962" max-vertical-offset="2370">
@@ -779,7 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34597155" vertical-offset="1581" max-vertical-offset="3150">
           <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,23 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="657">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/wp-admin/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1421801" vertical-offset="0" max-vertical-offset="633">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fruitcakestudio/knvb-dataservice-api/src/Team.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.037914693" vertical-offset="1851" max-vertical-offset="2775">
-          <caret line="125" column="20" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -829,7 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.6540284" vertical-offset="0" max-vertical-offset="1815">
           <caret line="112" column="13" selection-start-line="112" selection-start-column="13" selection-end-line="112" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -837,47 +813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.023696683" vertical-offset="0" max-vertical-offset="765">
           <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-          <folding>
-            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/ranking/team_rank.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90047395" vertical-offset="0" max-vertical-offset="705">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="17" />
-          <folding>
-            <element signature="e#6#67#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/results/club_result.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.074257426" vertical-offset="0" max-vertical-offset="1260">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knvb-plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24170616" vertical-offset="372" max-vertical-offset="1035">
-          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-          <folding>
-            <element signature="e#6#257#0#PHP" expanded="true" />
-            <element signature="e#296#321#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/results/team_result.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.04265403" vertical-offset="567" max-vertical-offset="1200">
-          <caret line="46" column="56" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -885,26 +820,95 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14691943" vertical-offset="342" max-vertical-offset="975">
           <caret line="29" column="69" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/wp-admin/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14173229" vertical-offset="0" max-vertical-offset="635">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/ranking/team_rank.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.416667" vertical-offset="179" max-vertical-offset="705">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
           <folding>
-            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#6#67#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/schedule/club_schedule.php">
+    <entry file="file://$PROJECT_DIR$/components/wp-admin/short-codes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.625" vertical-offset="312" max-vertical-offset="945">
-          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/results/team_result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.125" vertical-offset="567" max-vertical-offset="1200">
+          <caret line="72" column="90" selection-start-line="72" selection-start-column="90" selection-end-line="72" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/fruitcakestudio/knvb-dataservice-api/src/Match.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.2941175" vertical-offset="1341" max-vertical-offset="3270">
+          <caret line="104" column="7" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/fruitcakestudio/knvb-dataservice-api/src/Team.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4889976" vertical-offset="1566" max-vertical-offset="2775">
+          <caret line="145" column="12" selection-start-line="145" selection-start-column="12" selection-end-line="145" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/schedule/team_schedule.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7156398" vertical-offset="327" max-vertical-offset="960">
-          <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.2843602" vertical-offset="0" max-vertical-offset="960">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/knvb-dataservice.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/results/club_result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.75" vertical-offset="627" max-vertical-offset="1260">
+          <caret line="77" column="92" selection-start-line="77" selection-start-column="92" selection-end-line="77" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/knvb-plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="1110">
+          <caret line="13" column="3" selection-start-line="9" selection-start-column="0" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <element signature="e#6#257#0#PHP" expanded="true" />
+            <element signature="e#449#474#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/schedule/club_schedule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76303315" vertical-offset="312" max-vertical-offset="945">
+          <caret line="62" column="16" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="16" />
           <folding />
         </state>
       </provider>

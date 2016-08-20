@@ -33,7 +33,7 @@ function knvb_ranking($parameters) {
     $tpl->assign('self', $team->getId());
     return $tpl->draw('ranking/team_rank', true);
 }
-plugin_register_short_code('team-rank', 'Show the current rank of a team.', knvb_ranking, array(
+plugin_register_short_code('team-rank', 'Show the current rank of a team.', "knvb_ranking", array(
     'team-id' => 162813,
     'logo' => 'yes',
     "competitions" => "R,B,N,V",
