@@ -3,15 +3,19 @@
  * Plugin Name: KNVB Wordpress plugin
  * Plugin URI: http://www.iMunro.nl
  * Description: A Wordpress plugin for https://github.com/fruitcake/php-knvb-dataservice-api
- * Version: 1.01
+ * Version: 1.03
  * Author: Iain Munro
  * Author URI: http://www.iMunro.nl
  * */
-//if($_SERVER['REMOTE_ADDR'] == '-') {
+
+$cache = true;
+
+if($_SERVER['REMOTE_ADDR'] == '-') {
+//    $cache = false;
 //    ini_set('display_errors', 1);
 //    ini_set('display_startup_errors', 1);
 //    error_reporting(E_ALL);
-//}
+}
 
 require_once  'vendor/autoload.php';
 use KNVB\Dataservice\Api;
@@ -20,8 +24,6 @@ use phpFastCache\CacheManager;
 
 define('DS', '/');
 define('RL', dirname(__FILE__) . DS);
-
-$cache = true;
 
 //Quick helper that initiates fruitcakes project
 $club = null;
@@ -64,5 +66,19 @@ include_once(RL . 'components/schedule/team_schedule.php');
 include_once(RL . 'components/results/club_result.php');
 include_once(RL . 'components/results/team_result.php');
 
+
+/**
+ * Register with hook 'wp_enqueue_scripts', which can be used for front end CSS and JavaScript
+ */
+add_action( 'wp_enqueue_scripts', 'prefix_add_my_stylesheet' );
+
+/**
+ * Enqueue plugin style-file
+ */
+function prefix_add_my_stylesheet() {
+    // Respects SSL, Style.css is relative to the current file
+    wp_register_style( 'prefix-style', plugins_url('style.css', __FILE__) );
+    wp_enqueue_style( 'prefix-style' );
+}
 
 ?>

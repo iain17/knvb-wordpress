@@ -11,36 +11,38 @@
     {elseif="$value['compType'] == 'V'"}
     Vriendschappelijk
     {/if}</h3>{/if}
-    <table class="ranking resultaten" style="width:100%">
-        <tr class="resultsheader">
-            <th>POS</th>
-            <th>Club</th>
-            <th>GW</th>
-            <th>W</th>
-            <th>G</th>
-            <th>V</th>
-            <th>PTN</th>
-        </tr>
-        {loop="$value['results']"}
-        <tr{if="$value->TeamID == $self"} class="self"{/if}>
-            <td class="position">{$value->Positie}</td>
-            <td class="name">
-                {if="$logo && $value->logo"}
-                    <img alt="Clublogo van {$value->naam}" src="{$value->logo}" />
-                {else}
-                    {$value->naam}
-                {/if}
-            </td>
-            <td class="played" title="Gespeeld">{$value->Gespeeld}</td>
-            <td class="won" title="Gewonnen">{$value->Gewonnen}</td>
-            <td class="tie" title="Gelijk">{$value->Gelijk}</td>
-            <td class="lost" title="Verloren">{$value->Verloren}</td>
-            <td class="points" title="Punten">{$value->Punten}</td>
-        </tr>
-        {else}
-        <tr>
-            <td class="nothing" colspan="7" style="text-align: center;">Momenteel is er geen stand beschikbaar.</td>
-        </tr>
-        {/loop}
-    </table>
+    <div class="knvba">
+        <table class="ranking resultaten" style="width:100%">
+            <tr class="resultsheader">
+                <th>POS</th>
+                <th>Club</th>
+                <th>GW</th>
+                <th>W</th>
+                <th>G</th>
+                <th>V</th>
+                <th>PTN</th>
+            </tr>
+            {loop="$value['results']"}
+            <tr{if="$value->TeamID == $self"} class="self"{/if}>
+                <td class="position">{$value->Positie}</td>
+                <td class="name">
+                    {if="$logo && $value->logo"}
+                        <img alt="Clublogo van {$value->naam}" src="{$value->logo}" />
+                    {else}
+                        {$value->naam}
+                    {/if}
+                </td>
+                <td class="played" title="Gespeeld">{$value->Gespeeld}</td>
+                <td class="won" title="Gewonnen">{$value->Gewonnen}</td>
+                <td class="tie" title="Gelijk">{$value->Gelijk}</td>
+                <td class="lost" title="Verloren">{$value->Verloren}</td>
+                <td class="points" title="Punten">{$value->Punten}</td>
+            </tr>
+            {else}
+            <tr>
+                <td class="nothing" colspan="7" style="text-align: center;">Momenteel is er geen stand beschikbaar.</td>
+            </tr>
+            {/loop}
+        </table>
+    </div>
 {/loop}

@@ -1,0 +1,19 @@
+div.knvba {
+    overflow-x: auto;
+}
+
+article .entry-content table td, article .entry-content table th, article .comments-area table td, article .comments-area table th {
+    border: none !important;
+}
+
+.resultaten .knvb td, .resultaten .resultsheader th {
+    width: auto !important;
+}
+
+.upcoming_matches .knvb td, .upcoming_matches .knvb th {
+    width: auto !important;
+}
+
+.resultaten .uitslagen .knvb th {
+    display: table-cell !important;
+}

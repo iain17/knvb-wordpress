@@ -62,4 +62,5 @@ function knvb($parameters) {
 }
 
 add_shortcode('knvb', 'knvb');
+
 ?>
