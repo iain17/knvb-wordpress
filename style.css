@@ -17,3 +17,28 @@ article .entry-content table td, article .entry-content table th, article .comme
 .resultaten .uitslagen .knvb th {
     display: table-cell !important;
 }
+
+.knvba tr:nth-child(even), .knvb tr:nth-child(even) {
+    background-color: #4F575E !important;
+    color: white !important;
+}
+.knvba tr:nth-child(odd), .knvb tr:nth-child(odd) {
+    background-color: #2A3138 !important;
+    color: white !important;
+}
+
+.knvba table, .knvb table {
+    font-family: Oswald, Arial, sans-serif;
+}
+
+.resultsheader th, .resultsheader td {
+    background-color: rgb(1, 28, 159);
+    color: white;
+    padding: 20px;
+    font-family: Oswald, Arial, sans-serif;
+    font-size: 120%;
+}
+
+.lastresult {
+    background-color: transparent !important;
+}

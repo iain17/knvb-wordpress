@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7edc495-fc7d-45da-8c4a-b546c91210e7" name="Default" comment="A few requested adjustments.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style.css" />
+    <list default="true" id="a7edc495-fc7d-45da-8c4a-b546c91210e7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/ranking/team_rank.html" afterPath="$PROJECT_DIR$/components/ranking/team_rank.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/results/result.html" afterPath="$PROJECT_DIR$/components/results/result.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/results/result_extended.html" afterPath="$PROJECT_DIR$/components/results/result_extended.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/wp-admin/short-codes.php" afterPath="$PROJECT_DIR$/components/wp-admin/short-codes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knvb-plugin.php" afterPath="$PROJECT_DIR$/knvb-plugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="knvb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,8 +28,8 @@
       <file leaf-file-name="knvb-plugin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/knvb-plugin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            <state relative-caret-position="150">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
                 <element signature="e#6#257#0#PHP" expanded="true" />
                 <element signature="e#484#509#0#PHP" expanded="true" />
@@ -43,18 +38,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result_extended.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/results/result_extended.html">
+      <file leaf-file-name="result.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/results/result.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-488">
-              <caret line="78" column="25" selection-start-line="70" selection-start-column="20" selection-end-line="78" selection-end-column="25" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,8 +51,31 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+            <state relative-caret-position="75">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="team_result.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/results/team_result.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="11" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="2" />
+              <folding>
+                <element signature="e#6#67#0#PHP" expanded="true" />
+                <element signature="e#288#301#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="club_result.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/results/club_result.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="81" column="23" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -116,12 +128,12 @@
         <option value="$PROJECT_DIR$/components/schedule/club_schedule.php" />
         <option value="$PROJECT_DIR$/components/schedule/team_schedule.php" />
         <option value="$PROJECT_DIR$/components/schedule/club_schedule.html" />
-        <option value="$PROJECT_DIR$/components/results/result.html" />
         <option value="$PROJECT_DIR$/components/wp-admin/short-codes.php" />
         <option value="$PROJECT_DIR$/components/ranking/team_rank.html" />
         <option value="$PROJECT_DIR$/components/results/club_result.php" />
         <option value="$PROJECT_DIR$/components/results/result_extended.html" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/components/results/result.html" />
         <option value="$PROJECT_DIR$/knvb-plugin.php" />
       </list>
     </option>
@@ -134,9 +146,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="24" />
+    <option name="x" value="651" />
     <option name="y" value="22" />
-    <option name="width" value="1256" />
+    <option name="width" value="789" />
     <option name="height" value="778" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -164,8 +176,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -282,7 +294,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1467325003714</updated>
-      <workItem from="1477143739094" duration="1223000" />
+      <workItem from="1477143739094" duration="2586000" />
+      <workItem from="1477749657165" duration="189000" />
+      <workItem from="1479930448786" duration="776000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.&#10;First component: Rank of a team.">
       <created>1467333032902</created>
@@ -410,23 +424,29 @@
       <option name="project" value="LOCAL" />
       <updated>1471699176480</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="A few requested adjustments.">
+      <created>1477145056683</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1477145056683</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1223000" />
+    <option name="totallyTimeSpent" value="3551000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="24" y="22" width="1256" height="778" extended-state="6" />
+    <frame x="651" y="22" width="789" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21746293" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3708166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270073" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265306" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3265306" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4753219" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -441,6 +461,7 @@
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270073" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
@@ -475,7 +496,8 @@
     <MESSAGE value="schedule remove expired option added." />
     <MESSAGE value="Added competitions parameters.&#10;Added team schedule shortcode." />
     <MESSAGE value="Quick little fix for the hideExpired parameter." />
-    <option name="LAST_COMMIT_MESSAGE" value="Quick little fix for the hideExpired parameter." />
+    <MESSAGE value="A few requested adjustments." />
+    <option name="LAST_COMMIT_MESSAGE" value="A few requested adjustments." />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$/../../..</wordpressPath>
@@ -568,12 +590,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="94" selection-start-line="0" selection-start-column="94" selection-end-line="0" selection-end-column="94" />
@@ -687,12 +703,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="94" selection-start-line="0" selection-start-column="94" selection-end-line="0" selection-end-column="94" />
@@ -762,13 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/results/team_result.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="72" column="90" selection-start-line="72" selection-start-column="90" selection-end-line="72" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/fruitcakestudio/knvb-dataservice-api/src/Team.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -820,7 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -838,12 +840,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/results/result.html">
+    <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="75">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/results/team_result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="11" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="2" />
           <folding>
-            <element signature="n#style#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#6#67#0#PHP" expanded="true" />
+            <element signature="e#288#301#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -856,10 +867,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/components/results/result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/components/results/result_extended.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-488">
-          <caret line="78" column="25" selection-start-line="70" selection-start-column="20" selection-end-line="78" selection-end-column="25" />
+        <state relative-caret-position="153">
+          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -870,18 +889,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/knvb-plugin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="e#6#257#0#PHP" expanded="true" />
             <element signature="e#484#509#0#PHP" expanded="true" />
